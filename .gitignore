@@ -1,0 +1,9 @@
+# Local Claude Code / agent tooling
+.claude/
+.agents/
+skills-lock.json
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/

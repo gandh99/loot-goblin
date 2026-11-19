@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loot Goblin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="frame">
+    <header class="title-bar">
+      <h1>Loot Goblin</h1>
+      <p class="subtitle">Free games, cheap deals, and a bank full of savings.</p>
+    </header>
+
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-tab="giveaways" role="tab">Giveaways</button>
+      <button class="tab" data-tab="deals" role="tab">Deals</button>
+      <button class="tab" data-tab="f2p" role="tab">Free-to-Play</button>
+      <button class="tab" data-tab="fight" role="tab">Fight</button>
+      <button class="tab" data-tab="bank" role="tab">Bank <span id="bank-count">(0)</span></button>
+    </nav>
+
+    <main class="panel">
+      <div class="controls" id="controls">
+        <input type="search" id="search" placeholder="Search by name..." autocomplete="off">
+        <select id="filter"></select>
+      </div>
+      <div class="bank-total hidden" id="bank-total"></div>
+      <p class="status" id="status">Loading...</p>
+      <div class="grid" id="grid"></div>
+      <section class="arena-wrap hidden" id="arena"></section>
+    </main>
+
+    <section class="chatbox" aria-live="polite">
+      <div class="chat-log" id="chat-log"></div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
